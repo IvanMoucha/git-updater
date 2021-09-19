@@ -20,8 +20,8 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: [ubuntu-latest]
-        php-versions: ['7.4', '8.0']
-        phpunit-versions: ['latest']
+        php-versions: ['7.4']
+        phpunit-versions: ['7.5.20']
     name: PHP ${{ matrix.php-versions }} Test on ${{ matrix.operating-system }}
     steps:
     - name: Checkout
