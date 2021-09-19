@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        operating-system: [ubuntu-21.04]
+        operating-system: [ubuntu-latest]
         php-versions: ['7.4']
         phpunit-versions: ['7.5.20']
     name: PHP ${{ matrix.php-versions }} Test on ${{ matrix.operating-system }}
